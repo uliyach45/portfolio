@@ -1,0 +1,39 @@
+DEPLOYING THE SITE
+==================
+
+FILES — all five in one folder, no subfolders:
+  index.html  styles.css  script.js  og-image.png  og-image.svg
+  og-image.png must be uploaded. og-image.svg is optional.
+
+1. PUT IT ONLINE
+----------------
+  Netlify:  go to app.netlify.com/drop, drag the folder in, copy the address.
+  GitHub:   new public repo, upload the files to its top level,
+            Settings > Pages > Deploy from branch > main > / (root).
+
+
+2. REPLACE THE ADDRESS
+----------------------
+  Open index.html. Near the top, under "social cards", four lines contain a
+  web address. Replace all four with the real one.
+
+    canonical       https://yoursite.com/
+    og:url          https://yoursite.com/
+    og:image        https://yoursite.com/og-image.png
+    twitter:image   https://yoursite.com/og-image.png
+
+  Always the full address, starting with https://
+  Save, then upload the file again.
+
+
+COMMON MISTAKES
+---------------
+  og-image.png not uploaded      -> card has no image
+  short path instead of https:// -> ignored, card has no image
+  files inside a subfolder       -> page or styles will not load
+  index.html renamed             -> site will not open
+
+IF THIS IS SKIPPED
+------------------
+  The site still works. The link still opens. The preview card still shows
+  her name and description. Only the picture in the card is missing.

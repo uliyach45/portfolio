@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<title>Uliya Fatima — Cybersecurity</title>
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cg fill='none' stroke='%23B08D57' stroke-linecap='round'%3E%3Cpath d='M30 48 L60 98 L90 48' stroke-width='9' opacity='.42'/%3E%3Cpath d='M39 35 L60 71 L81 35' stroke-width='9' opacity='.7'/%3E%3Cpath d='M48 22 L60 43 L72 22' stroke-width='9.5'/%3E%3C/g%3E%3C/svg%3E" />
+<meta name="description" content="Uliya Fatima — cybersecurity student at Air University. Blue team and SOC defence, threat intelligence, digital forensics." />
+
+<!-- ── social cards ──────────────────────────────────────────────────
+     Live at https://uliyach45.github.io/portfolio/ — this requires the
+     GitHub repo to be named exactly "portfolio" with these files at its
+     root, and GitHub Pages switched on for the main branch.
+     If the repo is named something else, update all five URLs below.
+     ────────────────────────────────────────────────────────────────── -->
+<link rel="canonical" href="https://uliyach45.github.io/portfolio/" />
+<meta name="theme-color" content="#1F2A24" />
+<meta property="og:type" content="profile" />
+<meta property="og:site_name" content="Uliya Fatima" />
+<meta property="og:title" content="Uliya Fatima — Cybersecurity" />
+<meta property="og:description" content="Blue team and SOC defence, threat intelligence, digital forensics. Air University, Islamabad." />
+<meta property="og:url" content="https://uliyach45.github.io/portfolio/" />
+<meta property="og:image" content="https://uliyach45.github.io/portfolio/og-image.png" />
+<meta property="og:image:width" content="1200" />
+<meta property="og:image:height" content="630" />
+<meta property="og:image:alt" content="Uliya Fatima — detection and response" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Uliya Fatima — Cybersecurity" />
+<meta name="twitter:description" content="Blue team and SOC defence, threat intelligence, digital forensics. Air University, Islamabad." />
+<meta name="twitter:image" content="https://uliyach45.github.io/portfolio/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" />
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Inter:wght@300;400&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+
+</head>
+<body>
+
+<a class="skip" href="#top">Skip to content</a>
+
+<!-- ══════════════════════════════════════════════════
+     AMBIENT LAYER — drifting marks behind everything
+     ══════════════════════════════════════════════════ -->
+<div class="drift" id="drift" aria-hidden="true"></div>
+
+<!-- ════════════════════════════════════════════════
+     NAV — fixed header, logo lockup, section links
+     ════════════════════════════════════════════════ -->
+<nav class="nav" id="nav">
+  <div class="nav__inner">
+    <a href="#top" class="nav__logo" aria-label="Uliya Fatima — home">
+      <svg class="nav__mark" viewBox="0 0 120 120" aria-hidden="true">
+        <g fill="none" stroke-linecap="round">
+          <path d="M30 44 L60 94 L90 44" stroke="currentColor" stroke-width="7" opacity=".32"/>
+          <path d="M39 35 L60 71 L81 35" stroke="currentColor" stroke-width="7" opacity=".62"/>
+          <path d="M48 26 L60 47 L72 26" stroke="var(--brass)" stroke-width="7.5"/>
+        </g>
+      </svg>
+      <span class="nav__name">Uliya Fatima</span>
+    </a>
+    <div class="nav__links">
+      <a href="#about" class="nav__link">About</a>
+      <a href="#capabilities" class="nav__link">Capabilities</a>
+      <a href="#work" class="nav__link">Work</a>
+      <a href="#credentials" class="nav__link">Credentials</a>
+      <a href="#process" class="nav__link">Engagement</a>
+      <a href="#contact" class="nav__link">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<!-- ═════════════════════════════════════════════════════
+     RIGHT RAIL — section markers pinned to the viewport
+     ═════════════════════════════════════════════════════ -->
+<aside class="rail" id="rail" aria-label="Section index">
+  <a class="rail__item" href="#about"><span>About</span><i></i></a>
+  <a class="rail__item" href="#capabilities"><span>Capabilities</span><i></i></a>
+  <a class="rail__item" href="#work"><span>Work</span><i></i></a>
+  <a class="rail__item" href="#credentials"><span>Credentials</span><i></i></a>
+  <a class="rail__item" href="#process"><span>Engagement</span><i></i></a>
+  <a class="rail__item" href="#contact"><span>Contact</span><i></i></a>
+</aside>
+
+<main id="top">
+
+  <!-- ══ hero ══ -->
+  <!-- ═════════════════════════════════════════════════════
+       01 — HERO : cascading headline, lede, status ledger
+       ═════════════════════════════════════════════════════ -->
+  <header class="hero wrap">
+    <p class="hero__eyebrow"><i></i> Detection &amp; Response</p>
+    <h1 class="cascade">
+      <span><b>Defending</b></span>
+      <span><b>digital</b></span>
+      <span><b>frontiers</b></span>
+    </h1>
+    <div class="hero__tail">
+      <p>Threat intelligence, SOC monitoring and digital forensics. Cybersecurity student at Air University, Islamabad.</p>
+    </div>
+
+    <div class="ledger-strip" id="strip">
+      <span class="ls__item"><i class="ls__dot"></i> Available for Work</span>
+      <span class="ls__item" id="clock">Islamabad</span>
+      <span class="ls__item">Replies within a working day</span>
+      <span class="ls__scroll">Scroll <i></i></span>
+    </div>
+  </header>
+
+  <!-- ══ 01 about ══ -->
+  <!-- ══════════════════════════════════════════════════════
+       02 — ABOUT : prose, portrait plate, tally, signature
+       ══════════════════════════════════════════════════════ -->
+  <section class="sec wrap" id="about">
+    <div class="about__grid">
+      <div class="about__body rv">
+        <p class="eyebrow">About</p>
+        <h2 class="h2">Security work is <em>mostly patience</em></h2>
+        <div class="lede">
+          <p>I work on the defensive side: threat intelligence mapped to MITRE ATT&amp;CK, SOC monitoring, and the forensics that follows when something gets through.</p>
+          <p>Most of what I know came from building things — a certificate verifier, a ransomware detector, kernel-level security work. Looking for a team where detection and response are taken seriously.</p>
+          <p class="sig"><i></i><span>Uliya Fatima<br><small>Cybersecurity student, Air University</small></span></p>
+        </div>
+      </div>
+      <div class="rv">
+        <div class="plate"><svg viewBox="0 0 240 320" aria-hidden="true" focusable="false">
+          <g stroke="var(--rule-strong)" stroke-width="2" stroke-linecap="round">
+            <path d="M34 54 H158"/><path d="M34 76 H120"/><path d="M34 98 H176"/><path d="M34 120 H96"/>
+            <path d="M34 164 H150"/><path d="M34 186 H112"/><path d="M34 208 H190"/>
+            <path d="M34 230 H128"/><path d="M34 252 H166"/><path d="M34 274 H88"/>
+          </g>
+          <path d="M34 142 H206" stroke="var(--brass)" stroke-width="2.4" stroke-linecap="round"/>
+          <circle cx="218" cy="142" r="5" fill="var(--brass)"/>
+        </svg></div>
+        <div class="tally">
+          <div><span>5</span><p>Projects</p></div>
+          <div><span>3</span><p>Internships</p></div>
+          <div><span class="inf">&#8734;</span><p>Logs read</p></div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!-- ══ 02 capabilities ══ -->
+  <!-- ═════════════════════════════════════
+       03 — CAPABILITIES : coverage matrix
+       ═════════════════════════════════════ -->
+  <section class="sec wrap" id="capabilities">
+    <div class="rv">
+      <p class="eyebrow">Capabilities</p>
+      <h2 class="h2">What I <em>work on</em></h2>
+    </div>
+    <div class="matrix rv">
+      <div class="mrow mrow--head">
+        <span></span><span>Endpoint</span><span>Network</span><span>SIEM</span>
+      </div>
+
+      <div class="mrow">
+        <h3>Threat intelligence<small>Actor behaviour mapped to MITRE ATT&amp;CK, turned into detections</small></h3>
+        <i class="mark"></i><i class="mark mark--full"></i><i class="mark mark--full"></i>
+      </div>
+
+      <div class="mrow">
+        <h3>SOC monitoring<small>Alert triage and detection engineering in live environments</small></h3>
+        <i class="mark mark--full"></i><i class="mark mark--full"></i><i class="mark mark--full"></i>
+      </div>
+
+      <div class="mrow">
+        <h3>Threat hunting<small>Hypothesis-led hunts across host and network telemetry</small></h3>
+        <i class="mark mark--full"></i><i class="mark mark--full"></i><i class="mark"></i>
+      </div>
+
+      <div class="mrow">
+        <h3>Digital forensics<small>Host artefacts, malware behaviour and incident reconstruction</small></h3>
+        <i class="mark mark--full"></i><i class="mark"></i><i class="mark mark--none"></i>
+      </div>
+
+      <div class="mrow">
+        <h3>Network defence<small>Traffic analysis, segmentation and perimeter monitoring</small></h3>
+        <i class="mark"></i><i class="mark mark--full"></i><i class="mark mark--full"></i>
+      </div>
+    </div>
+
+    <div class="mkey rv">
+      <span><i class="mark mark--full"></i> Core focus</span>
+      <span><i class="mark"></i> Working knowledge</span>
+      <span><i class="mark mark--none"></i> Not applicable</span>
+    </div>
+  </section>
+
+  <!-- ══ 03 work ══ — PLACEHOLDER COPY. Every engagement below is invented;
+       replace with Uliya's real projects (university, CTF, lab, internship) before publishing. -->
+  <!-- ═════════════════════════════════════════════════════
+       04 — WORK : dated spine, four entries with diagrams
+       ═════════════════════════════════════════════════════ -->
+  <section class="sec wrap" id="work">
+    <div class="rv">
+      <p class="eyebrow">Experience &amp; projects</p>
+      <h2 class="h2">Where I have <em>done the work</em></h2>
+      <p class="lede">A research role, two internships, and a kernel project.</p>
+    </div>
+
+    <div class="spine spine--work">
+      <div class="spine__list">
+        <span class="spine__fill" id="spineFill"></span>
+
+        <article class="spine__row">
+          <span class="spine__year">2023</span>
+          <div class="wcase">
+            <div>
+              <h3>Cybersecurity Researcher — Air University</h3>
+              <p>Hands-on research and training through the Cybersecurity Department: SOC analyst defence techniques, MITRE ATT&amp;CK framework application, threat hunting and incident response, network defence and monitoring, and digital forensics and malware analysis.</p>
+              <p class="case__out">Kali Linux · Metasploit · Wireshark · ELK Stack · Cisco Networking</p>
+              <div class="case__tags"><i></i><span>Cybersecurity Department &nbsp;·&nbsp; Sep 2023 — present</span></div>
+            </div>
+            <div class="wcase__plate"><svg viewBox="0 0 320 240" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="var(--rule-strong)" stroke-width="1.2">
+    <rect x="22" y="70" width="52" height="30"/><rect x="88" y="70" width="52" height="30"/><rect x="154" y="70" width="52" height="30"/><rect x="220" y="70" width="52" height="30"/>
+    <rect x="22" y="110" width="52" height="30"/><rect x="88" y="110" width="52" height="30"/><rect x="154" y="110" width="52" height="30"/><rect x="220" y="110" width="52" height="30"/>
+    <rect x="22" y="150" width="52" height="30"/><rect x="88" y="150" width="52" height="30"/><rect x="154" y="150" width="52" height="30"/><rect x="220" y="150" width="52" height="30"/>
+  </g>
+  <g fill="var(--brass)" opacity=".85">
+    <rect x="88" y="70" width="52" height="30"/><rect x="154" y="110" width="52" height="30"/>
+    <rect x="22" y="150" width="52" height="30"/><rect x="220" y="150" width="52" height="30"/>
+  </g>
+  <text x="147" y="48" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="var(--sage)">MITRE ATT&amp;CK</text>
+  <text x="147" y="208" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="var(--ink-soft)">technique coverage</text>
+</svg></div>
+          </div>
+        </article>
+
+        <article class="spine__row">
+          <span class="spine__year">2026</span>
+          <div class="wcase">
+            <div>
+              <h3>Cyber Security Engineer — TraceVerge</h3>
+              <p>Security engineering internship: SOC monitoring across Microsoft Sentinel and Defender XDR.</p>
+              <p class="case__out">Sentinel · Defender XDR · SOC monitoring</p>
+              <div class="case__tags"><i></i><span>Islamabad &nbsp;·&nbsp; Sep 2026 — present</span></div>
+            </div>
+            <div class="wcase__plate"><svg viewBox="0 0 320 240" aria-hidden="true" focusable="false">
+  <g font-family="Georgia, serif" font-size="13" fill="var(--ink-mid)">
+    <text x="22" y="52">Sentinel</text><text x="22" y="96">Defender XDR</text><text x="22" y="140">Endpoint logs</text>
+  </g>
+  <g stroke="var(--rule-strong)" stroke-width="1.4" fill="none">
+    <path d="M122 47 C156 47 156 118 182 118"/>
+    <path d="M122 91 C156 91 156 118 182 118"/>
+    <path d="M122 135 C156 135 156 118 182 118"/>
+  </g>
+  <path d="M182 88 L276 88 L248 150 L210 150 Z" fill="none" stroke="var(--sage)" stroke-width="1.6"/>
+  <text x="229" y="124" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="var(--ink-mid)">triage</text>
+  <path d="M229 150 V186" stroke="var(--brass)" stroke-width="1.6"/>
+  <circle cx="229" cy="194" r="6" fill="var(--brass)"/>
+  <text x="229" y="222" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="var(--brass)">escalated</text>
+</svg></div>
+          </div>
+        </article>
+
+        <article class="spine__row">
+          <span class="spine__year">2026</span>
+          <div class="wcase">
+            <div>
+              <h3>SOC Analyst — Pakistan Nuclear Regulatory Authority</h3>
+              <p>EDR monitoring in Kaspersky Security Center and detection engineering for air-gapped malware. Built an end-to-end SIEM–TIP pipeline — Sysmon into Wazuh into MISP — and ran threat hunting labs with DeepBlueCLI alongside traffic analysis in Zeek and Splunk.</p>
+              <p class="case__out">A working SIEM–TIP pipeline, built end to end.</p>
+              <div class="case__tags"><i></i><span>PNRA / NISAS &nbsp;·&nbsp; Jun — Aug 2026</span></div>
+            </div>
+            <div class="wcase__plate"><svg viewBox="0 0 320 240" aria-hidden="true" focusable="false">
+  <g fill="none" stroke="var(--sage)" stroke-width="1.6">
+    <rect x="14" y="98" width="78" height="46" rx="2"/>
+    <rect x="121" y="98" width="78" height="46" rx="2"/>
+    <rect x="228" y="98" width="78" height="46" rx="2"/>
+  </g>
+  <g font-family="Georgia, serif" font-size="14" fill="var(--forest)" text-anchor="middle">
+    <text x="53" y="126">Sysmon</text><text x="160" y="126">Wazuh</text><text x="267" y="126">MISP</text>
+  </g>
+  <g stroke="var(--brass)" stroke-width="1.6"><path d="M92 121 H115"/><path d="M199 121 H222"/></g>
+  <g fill="var(--brass)"><path d="M121 121 l-7 -4 v8 z"/><path d="M228 121 l-7 -4 v8 z"/></g>
+  <path d="M53 98 V62 H267 V98" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-dasharray="4 5"/>
+  <text x="160" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="var(--sage)">Zeek · Splunk</text>
+  <text x="160" y="186" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="var(--ink-soft)">host telemetry to shared intelligence</text>
+</svg></div>
+          </div>
+        </article>
+
+        <article class="spine__row">
+          <span class="spine__year">2026</span>
+          <div class="wcase">
+            <div>
+              <h3>Intern — Pakistan Nuclear Regulatory Authority</h3>
+              <p>Network isolation and verification across regulated infrastructure, alongside specialised cybersecurity courses attended with visiting foreign delegations.</p>
+              <p class="case__out">Regulated infrastructure, up close.</p>
+              <div class="case__tags"><i></i><span>PNRA / NISAS &nbsp;·&nbsp; Jun — Aug 2026</span></div>
+            </div>
+            <div class="wcase__plate"><svg viewBox="0 0 320 240" aria-hidden="true" focusable="false">
+  <circle cx="160" cy="120" r="76" fill="none" stroke="var(--rule-strong)" stroke-width="1.2" stroke-dasharray="5 7"/>
+  <circle cx="160" cy="120" r="46" fill="none" stroke="var(--sage)" stroke-width="1.4"/>
+  <circle cx="160" cy="120" r="7" fill="var(--brass)"/>
+  <path d="M160 44 V74" stroke="var(--brass)" stroke-width="1.6"/>
+  <path d="M160 74 l-4 -7 h8 z" fill="var(--brass)"/>
+  <text x="160" y="32" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="var(--ink-soft)">isolated network</text>
+  <text x="160" y="218" text-anchor="middle" font-family="Georgia, serif" font-size="13" fill="var(--sage)">verified at every boundary</text>
+</svg></div>
+          </div>
+        </article>
+
+        <article class="spine__row">
+          <span class="spine__year">Project</span>
+          <div class="wcase">
+            <div>
+              <h3>Linux kernel security modifications</h3>
+              <p>Deep-level system programming against the Linux kernel to add security features — working below the tooling layer, in the code that enforces the boundaries everything else depends on.</p>
+              <p class="case__out">Security enforced where it cannot be bypassed.</p>
+              <div class="case__tags"><i></i><span>C &nbsp;·&nbsp; kernel modules &nbsp;·&nbsp; syscall internals</span></div>
+            </div>
+            <div class="wcase__plate"><svg viewBox="0 0 320 240" aria-hidden="true" focusable="false">
+  <rect x="34" y="34" width="252" height="172" fill="none" stroke="var(--rule-strong)" stroke-width="1.2"/>
+  <rect x="68" y="60" width="184" height="120" fill="none" stroke="var(--sage)" stroke-width="1.4"/>
+  <rect x="104" y="86" width="112" height="68" fill="none" stroke="var(--brass)" stroke-width="1.8"/>
+  <text x="160" y="126" text-anchor="middle" font-family="Georgia, serif" font-size="14" fill="var(--brass)">kernel</text>
+  <text x="160" y="52" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="var(--ink-soft)">user space</text>
+  <text x="160" y="196" text-anchor="middle" font-family="Georgia, serif" font-size="12.5" fill="var(--sage)">syscall boundary</text>
+  <g stroke="var(--brass)" stroke-width="1.4"><path d="M160 60 V86"/></g>
+  <g fill="var(--brass)"><path d="M160 86 l-4 -7 h8 z"/></g>
+</svg></div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 04 credentials ══ -->
+  <!-- ══════════════════════════════════════════════════════════
+       05 — CREDENTIALS : degree and five verified certificates
+       ══════════════════════════════════════════════════════════ -->
+  <section class="sec wrap" id="credentials">
+    <div class="rv">
+      <p class="eyebrow">Credentials</p>
+      <h2 class="h2">Held, current, <em>verifiable</em></h2>
+    </div>
+    <div class="plot rv">
+      <div class="axis">
+        <span></span>
+        <div class="axis__years"><span style="--at:0%">2023</span><span style="--at:33.3%">2025</span><span style="--at:66.6%">2027</span><span style="--at:95%">2029</span></div>
+        <span></span>
+      </div>
+
+      <div class="today"><span>today</span></div>
+
+      <div class="crow">
+        <h3>BS Cyber Security<small>Air University, Islamabad</small></h3>
+        <div class="track"><span class="bar bar--open" style="--from:0%;--span:66%"></span></div>
+        <div class="cmeta"><span>2027 expected</span></div>
+      </div>
+
+      <div class="crow">
+        <h3>CTHIRI — Certified Threat Hunting &amp; Incident Response I<small>Red Team Leaders</small></h3>
+        <div class="track"><span class="bar" style="--from:55.5%;--span:1.6%"></span></div>
+        <div class="cmeta"><span>Jun 2026</span><a href="https://courses.redteamleaders.com/exam-completion/e3fcd6ba4d041834" target="_blank" rel="noopener" aria-label="Verify CTHIRI"><i></i>Verify</a></div>
+      </div>
+
+      <div class="crow">
+        <h3>Cyber Threat Intelligence 101 — FTIA<small>arcX · CREST-accredited</small></h3>
+        <div class="track"><span class="bar" style="--from:53.3%;--span:1.6%"></span></div>
+        <div class="cmeta"><span>Apr 2026</span><a href="https://arcx.io/verify-certificate?id=a1f918a9f50e68dc0a998342b734f3b220eff87b&amp;k=324284eb5e4442ca89608c6e017fa2d5" target="_blank" rel="noopener" aria-label="Verify arcX Cyber Threat Intelligence 101"><i></i>Verify</a></div>
+      </div>
+
+      <div class="crow">
+        <h3>CTIGA — Certified Threat Intelligence &amp; Governance Analyst<small>Red Team Leaders</small></h3>
+        <div class="track"><span class="bar" style="--from:54.1%;--span:1.6%"></span></div>
+        <div class="cmeta"><span>May 2026</span><a href="https://courses.redteamleaders.com/exam-completion/013f30503da26ebf" target="_blank" rel="noopener" aria-label="Verify CTIGA"><i></i>Verify</a></div>
+      </div>
+
+      <div class="crow">
+        <h3>Model Context Protocol — Advanced Topics<small>Anthropic</small></h3>
+        <div class="track"><span class="bar" style="--from:54.1%;--span:1.6%"></span></div>
+        <div class="cmeta"><span>May 2026</span><a href="https://verify.skilljar.com/c/d3emg5vrmivn" target="_blank" rel="noopener" aria-label="Verify Model Context Protocol certificate"><i></i>Verify</a></div>
+      </div>
+
+      <div class="crow">
+        <h3>Recon for Bug Bounty &amp; Ethical Hackers<small>Udemy · 9 hours</small></h3>
+        <div class="track"><span class="bar" style="--from:54.1%;--span:1.6%"></span></div>
+        <div class="cmeta"><span>May 2026</span><a href="https://ude.my/UC-b4c9b591-9ad6-4925-b5a9-b5ddbedbc6fe" target="_blank" rel="noopener" aria-label="Verify Udemy certificate"><i></i>Verify</a></div>
+      </div>
+    </div>
+
+    <div class="ckey rv">
+      <span><i class="ckey__bar ckey__bar--open"></i> Degree in progress</span>
+      <span><i class="ckey__bar ckey__bar--dot"></i> Certificate awarded</span>
+      <span><i class="ckey__today"></i> Today</span>
+      <span class="ckey__hint">Click any row to verify</span>
+    </div>
+  </section>
+
+  <!-- ══ 05 engagement ══ -->
+  <!-- ════════════════════════════════════════════════════
+       06 — LOOKING FOR : the four roles she is targeting
+       ════════════════════════════════════════════════════ -->
+  <section class="sec wrap" id="process">
+    <div class="rv">
+      <p class="eyebrow">Engagement</p>
+      <h2 class="h2">What I am <em>looking for</em></h2>
+    </div>
+    <div class="steps rv">
+      <div class="step">
+        <h3><i></i>SOC analyst &amp; security operations</h3>
+        <p>Alert triage, detection tuning and the unglamorous work of making a monitoring stack trustworthy. Hands-on with Sentinel, Defender XDR, Wazuh and Splunk.</p>
+      </div>
+      <div class="step">
+        <h3><i></i>Threat intelligence</h3>
+        <p>Mapping actor behaviour to MITRE ATT&amp;CK and turning it into detections that fire on technique rather than indicator.</p>
+      </div>
+      <div class="step">
+        <h3><i></i>Blue team &amp; defensive engineering</h3>
+        <p>Network defence, segmentation and the pipelines that carry telemetry from host to analyst — Sysmon, Zeek, MISP.</p>
+      </div>
+      <div class="step">
+        <h3><i></i>Digital forensics &amp; research</h3>
+        <p>Host artefacts, malware behaviour, and incident reconstruction — reading what a system did after the fact, and writing down what it means.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══ 06 contact ══ -->
+  <!-- ═════════════════════════════════════════════════
+       07 — CONTACT : email and phone, both live links
+       ═════════════════════════════════════════════════ -->
+  <section class="sec wrap contact" id="contact">
+    <div class="rv">
+      <p class="eyebrow">Contact</p>
+      <h2 class="contact__line">If you are <em>building a team</em></h2>
+      <div class="channels">
+        <div class="ch">
+          <span class="ch__label">Write</span>
+          <a class="ch__value" href="mailto:uliyafatima82@gmail.com">uliyafatima82@gmail.com</a>
+          <button class="ch__copy" type="button" data-copy="uliyafatima82@gmail.com">Copy</button>
+        </div>
+        <div class="ch">
+          <span class="ch__label">Call</span>
+          <a class="ch__value" href="tel:+923322224521">+92 332 222 4521</a>
+          <button class="ch__copy" type="button" data-copy="+923322224521">Copy</button>
+        </div>
+      </div>
+
+      <p class="hours" id="hours"><i></i><span>Checking the hour in Islamabad</span></p>
+
+    </div>
+  </section>
+
+</main>
+
+<!-- ══════════════════════════════════════════════════
+     08 — FOOTER : signature, year, external profiles
+     ══════════════════════════════════════════════════ -->
+<footer class="sigfoot" id="sigfoot">
+  <div class="sigfoot__name"><span class="underline">Uliya Fatima</span></div>
+  <div class="sigfoot__meta">
+    <span>Signed</span>
+    <i class="sigfoot__dot"></i>
+    <b>MMXXVI</b>
+    <i class="sigfoot__dot"></i>
+    <a href="https://www.linkedin.com/in/uliya-fatima" target="_blank" rel="noopener">LinkedIn</a>
+    <i class="sigfoot__dot"></i>
+    <a href="https://github.com/uliyach45" target="_blank" rel="noopener">GitHub</a>
+    <i class="sigfoot__dot"></i>
+    <a href="https://app.letsdefend.io/user/uliyafatima82" target="_blank" rel="noopener">LetsDefend</a>
+  </div>
+</footer>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+
+<script src="script.js"></script>
+</body>
+</html>
